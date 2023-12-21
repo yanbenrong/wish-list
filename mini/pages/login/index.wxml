@@ -1,0 +1,16 @@
+<!-- pages/login/index.wxml -->
+<view class="login">
+    <view class="login_title">
+        <image src="../../image/01.png"></image>
+        <view></view>
+    </view>
+    <view class="info">
+        <button open-type="chooseAvatar" class="avatar" bindchooseavatar="bindchooseavatar">
+            <image src="{{ avatarUrl }}"></image>
+        </button>
+        <form  catchsubmit="login">
+            <input type="nickname" name="nickname" placeholder="请输入昵称" />
+            <button class="login_button"  formType="submit">开启</button>
+        </form>
+    </view>
+</view>
